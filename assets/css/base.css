@@ -98,6 +98,13 @@
     font-style: italic;
 }
 
+@font-face {
+    font-family: olympic;
+    src: url("../fonts/olympic/olympicbranding.ttf");
+    font-weight: 100;
+    font-style: normal;
+}
+
 .thin {
     font-family: avlo;
     font-weight: 200;
@@ -170,6 +177,12 @@
     font-style: italic;
 }
 
+.olympic {
+    font-family: olympic;
+    font-weight: 100;
+    font-style: normal;  
+}
+
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -182,6 +195,8 @@
     margin: 0;
     padding: 0;
     -webkit-text-size-adjust: none;
+    color: #222;
+    font-family: light;
 }
 
 
@@ -245,6 +260,17 @@ header {
     font-size: 30px;
     line-height: 30px;
     z-index: 0;
+    box-shadow: 0 0 10px #333;
+}
+
+header .headline {
+    position: fixed;
+    left: 50%; top: 7px;
+    color: #fff;
+    transform: translateX(-50%);
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 header .icon {
@@ -263,35 +289,33 @@ header .icon {
     left: var(--negative-nav-width);
     height: 100%;
     width: var(--nav-width);
-    background: var(--nav-background-color);
+    background: rgba(0, 0, 0, 0.5);
     overflow-x: hidden;
     overflow-y: scroll;
     padding: 20px;
     -webkit-overflow-scrolling: touch;
-    border-left: 20px solid var(--nav-accent-color);
+    border-left: 20px solid #000;
 }
 
 
 /* actual page content pane */
 
 .page-wrapper {
-    margin-left: 0px;
-    margin-top: 50px;
     width: 100%;
-    height: calc(100% - 50px);
+    height: 100%;
     overflow-x: hidden;
     overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
-    padding: 1rem 0;
+    padding: calc(50px + 1rem) 0 0 0;
 }
 
 main {
-    min-height: calc(100vh - 50px);
+    min-height: 100vh;
     width: 100%;    
     max-width: 1000px;
     margin: auto;
     display: block;
-    padding: 1rem;
+    padding: 0 1rem;
 }
 
 main > * {
@@ -380,7 +404,7 @@ main > * {
 
 .footer .column .links a {
     text-decoration: none;
-    color: #888;
+    color: #666;
     display: block;
     margin: 10px 0;
 }
