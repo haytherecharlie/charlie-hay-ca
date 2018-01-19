@@ -29,17 +29,72 @@
     <link rel="manifest" href="/app/favicon/manifest.json">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="/app/css/article.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/article.css">
 
 </head>
 
 <body>
 
-    Hello 404 page!
+    <!-- HEADER / NAV -->
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <header></header>
+    <nav id="drawer">
+        <ul>
+            <li>
+                <a href="#" class="light">Home</a>
+            </li>
+            <li>
+                <a href="#" class="light">My Blog</a>
+            </li>
+            <li>
+                <a href="#" class="light">Resume</a>
+            </li>
+            <li>
+                <a href="#" class="light">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="page-wrapper">
+
+        <main class="light">
+
+            Article Not Found.
+
+        </main>
+
+        <div class="footer">
+            <div class="column">
+                <span class="bold">Social Media</span>
+                <div class="links">
+                    <a href="" class="light">My Facebook Profile</a>
+                    <a href="" class="light">My Instagram</a>
+                </div>
+            </div>
+            <div class="column">
+                <span class="bold">Portfolio</span>
+                <div class="links">
+                    <a href="" class="light">View Me On Github</a>
+                    <a href="" class="light">Check Out My Resume</a>
+                </div>
+            </div>
+            <div class="column">
+                <span class="bold">Contact</span>
+                <div class="links">
+                    <a href="" class="light">contact@charliehay.ca</a>
+                    <a href="" class="light">35 Mariner Terrace, Toronto CA</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
 
 </body>
 
-<!-- RESUME CONTENT -->
-<script type="text/javascript" src="/app/js/article.js"></script>
+<!-- SCRIPTS -->
+<script type="text/javascript" src="/assets/js/article.js"></script>
 
 </html>

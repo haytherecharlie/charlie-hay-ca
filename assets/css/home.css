@@ -1,0 +1,11 @@
+.hello {
+    min-height: 200px;
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    padding: 1rem;
+}
+.charlie {
+    max-width: 100%;
+    width: 300px;
+    border-radius: 50%;
+}

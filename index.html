@@ -9,37 +9,93 @@
     <!-- META TAGS -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/app/favicon/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="/assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
     <!-- FAVICONS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="/app/favicon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/app/favicon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/app/favicon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/app/favicon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/app/favicon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/app/favicon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/app/favicon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/app/favicon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/app/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="/app/favicon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/app/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/app/favicon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/app/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/app/favicon/manifest.json">
+    <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/assets/favicon/manifest.json">
 
     <!-- STYLESHEET -->
-    <link rel="stylesheet" type="text/css" href="/app/css/home.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/home.css">
 
 </head>
 
 <body>
 
-    Hello Home Page!
+    <!-- HEADER / NAV -->
+    <input type="checkbox" id="drawer-toggle" name="drawer-toggle" />
+    <label for="drawer-toggle" id="drawer-toggle-label"></label>
+    <header>
+        <img class="icon" src="/assets/img/charlie.jpg">
+    </header>
+    <nav id="drawer">
+        <ul>
+            <li>
+                <a href="#" class="light">Home</a>
+            </li>
+            <li>
+                <a href="#" class="light">Blog</a>
+            </li>
+            <li>
+                <a href="#" class="light">Resume</a>
+            </li>
+            <li>
+                <a href="#" class="light">Contact</a>
+            </li>
+        </ul>
+    </nav>
 
+    <div class="page-wrapper">
+        
+        <main>
+            
+            <div class="hello">
+                <img class="charlie" src="/assets/img/hello.jpg">
+            </div>
+
+        </main>
+
+        <div class="footer">
+            <div class="column">
+                <span class="medium">Social Media</span>
+                <div class="links">
+                    <a href="" class="light">My Facebook Profile</a>
+                    <a href="" class="light">My Instagram</a>
+                </div>
+            </div>
+            <div class="column">
+                <span class="medium">Portfolio</span>
+                <div class="links">
+                    <a href="" class="light">View Me On Github</a>
+                    <a href="" class="light">Check Out My Resume</a>
+                </div>
+            </div>
+            <div class="column">
+                <span class="medium">Contact</span>
+                <div class="links">
+                    <a href="" class="light">contact@charliehay.ca</a>
+                    <a href="" class="light">35 Mariner Terrace, Toronto CA</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
-<!-- RESUME CONTENT -->
-<script type="text/javascript" src="/app/js/home.js"></script>
+<!-- SCRIPTS -->
+<script type="text/javascript" src="/assets/js/home.js"></script>
 
 </html>
