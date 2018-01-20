@@ -3,7 +3,7 @@
  */
 ((entires) => {
 
-    const main = document.querySelector('main');
+    const main = document.querySelector('.post-container');
     
     entries.map((entry) => {
         main.innerHTML += `
